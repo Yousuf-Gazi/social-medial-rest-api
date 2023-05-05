@@ -34,6 +34,17 @@ const UserSchema = new Schema(
             type: Array,
             default: []
         },
+        isAdmin: {
+            type: Boolean,
+            default: false
+        },
+        description: {
+            type: String,
+            max: 100
+        },
+        from: {
+            type: String
+        }
     },
     {
         timestamps: true
